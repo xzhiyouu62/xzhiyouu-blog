@@ -142,12 +142,6 @@ p = 1237
 q = 2049
 e = 65537
 ```
-根據提示與RSA加密公式
-\begin{align*}
-& e^{-1} \equiv d\ (mod\ \phi(n))\\
-\rightarrow \ & ed \equiv 1\ (mod\ \phi(n))\\
-\rightarrow \ & ed\ mod\ \phi(n) = 1
-\end{align*}
 ```python=
 >>> from Crypto.Util.number import *
 >>> p = 1237
