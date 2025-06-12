@@ -1,10 +1,8 @@
 ---
-title: US Cyber Game writeup
-published: 2025-06-12
-category: CTF
-licenseName: "Unlicensed"
-author: xzhiyouu
-sourceLink: "https://hackmd.io/@xzhiyouu/r1K3T4_mxl"
+title: "US Cyber Game writeup"
+date: "2025-06-12"
+author: "xzhiyouu"
+tags: ["CTF"]
 draft: false
 ---
 ### Cookie (Web)
