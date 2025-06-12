@@ -8,7 +8,6 @@ author: xzhiyouu
 sourceLink: "https://hackmd.io/@xzhiyouu/Sk-7O8OXlx"
 draft: false
 ---
-# 音樂科期末考筆記
 ## 人聲分類
 
 ### 1. 女高音 [Soprano]（中央C【c¹】~高二八度C【c³】）
