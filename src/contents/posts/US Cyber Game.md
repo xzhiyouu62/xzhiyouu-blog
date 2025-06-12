@@ -44,7 +44,7 @@ Disallow: /admin
 
 看了一下原始碼發現他直接把當第三段 flag 和登入後的路徑寫出來了<br>
 
-```
+```javascript=
 <script>
         const ADMIN_USER = 'admin';
         const CRUMB_3 = 'sxM19mT3JfZEF';
@@ -97,7 +97,7 @@ Instructions:
 6) Enjoy your FLAG cookie~!
 ```
 * /refrigerator/Milk.js
-```
+```javascript=
 // If he asks for a glass of milk, he's going to want a cookie to go with it.
 
 function pourMilk() {
@@ -131,7 +131,7 @@ pourMilk();
 
 
 把 n 分解成 p 和 q 就可以了<br>
-```python
+```python=
 >>> from Crypto.Util.number import *
 >>> n = 102064367305175623005003367803963735992210717721719563218760598878897771063019
 >>> p = 305875545128432734240552595430305723491
