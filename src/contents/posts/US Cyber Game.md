@@ -1,8 +1,10 @@
 ---
-title: "US Cyber Game writeup"
-date: "2025-06-12"
-author: "xzhiyouu"
-tags: ["CTF"]
+title: US Cyber Game writeup
+published: 2025-06-12
+category: CTF
+licenseName: "Unlicensed"
+author: xzhiyouu
+sourceLink: "https://hackmd.io/@xzhiyouu/r1K3T4_mxl"
 draft: false
 ---
 ### Cookie (Web)
@@ -17,14 +19,18 @@ draft: false
 ```
 QWZ0ZXIgaW5zcGVjdGluZyB0aGUgY29udGVudHMsIGhlJ2xsIGhvcCBvbiB0aGUgUk9CT1QgdmFjY3V1bSBwaWNraW5nIHVwIHRoZSBjcnVtYnMgaGUgbWFkZS4KQ3J1bWIgMTogZFY5Q1FHc3paRjloVA==
 ```
+
 base64 解碼出來會是這樣
+
 ```
 After inspecting the contents, he'll hop on the ROBOT vaccuum picking up the crumbs he made.
 Crumb 1: dV9CQGszZF9hT
 ```
+
 得到第一段 flag: `dV9CQGszZF9hT`
 base64 解碼後: `u_B@k3d_aL`
 接著因為他提到 `ROBOT` ，所以看了一下 `/robots.txt`
+
 ```
 User-agent: *
 Disallow: /admin
@@ -32,12 +38,14 @@ Disallow: /admin
 # The robot vaccuum arrives at a locked door, which naturally he'll want to get inside
 # Crumb 2: jB0SDNSX2MwMG
 ```
+
 拿到第二段 flag: `jB0SDNSX2MwMG`
 但發現沒辦法單獨 base64 解碼，需要和第一段結合在一起，得到 `u_B@k3d_aN0tH3R_c00`
 接著進到 `/admin`
 出現一個登入頁面
 ![螢幕擷取畫面 2025-06-12 193102](https://hackmd.io/_uploads/S1cplBO7ex.png)
 看了一下原始碼發現他直接把當第三段 flag 和登入後的路徑寫出來了
+
 ```javascript
 <script>
         const ADMIN_USER = 'admin';
@@ -52,6 +60,7 @@ Disallow: /admin
             }
         }
 </script>
+
 ```
 目前三段 flag 拼湊出的答案 `u_B@k3d_aN0tH3R_c00k13_fOr_dA`
 接著進入 `/kitchen`
@@ -62,6 +71,7 @@ Breaking into the door will make him thirsty, he'll want to find a glass of MILK
 
 Crumb 3? Try the password on the door.
 ```
+
 * /floor/aNoteFallenFromTheFridge.txt
 ```
 Steps to making my Fully Layered And Golden (FLAG) Cookie Recipe:
@@ -87,6 +97,7 @@ Instructions:
 5) Refresh the home page.
 6) Enjoy your FLAG cookie~!
 ```
+
 * /refrigerator/Milk.js
 ```javascript
 // If he asks for a glass of milk, he's going to want a cookie to go with it.
@@ -104,6 +115,7 @@ function bakeCookie() {
 
 pourMilk();
 ```
+
 發現第四段 flag，把四段 flag 結合在一起後
 `u_B@k3d_aN0tH3R_c00k13_fOr_dA_MoU5e!!!`
 
