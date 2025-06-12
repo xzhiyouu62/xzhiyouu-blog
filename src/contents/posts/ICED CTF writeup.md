@@ -8,8 +8,6 @@ author: xzhiyouu
 sourceLink: "https://hackmd.io/@xzhiyouu/HyfcDjZH1e"
 draft: false
 ---
-
-# ICED CTF writeup
 ~~無聊來打打竹科實中資安社新出的題目~~
 ~~而且剛好是crypto欸~~
 ![crypto](https://hackmd.io/_uploads/S1PMOsbryl.png)
