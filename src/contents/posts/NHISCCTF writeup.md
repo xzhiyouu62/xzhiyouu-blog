@@ -7,7 +7,6 @@ author: xzhiyouu
 sourceLink: "https://hackmd.io/@xzhiyouu/NHISCCTF_2_writeup"
 draft: false
 ---
-# NHISCCTF - writeup
 ~~這是一份為資研社期末競賽亂出的題目解析~~<br>
 CTF平台: http://23.146.248.199/
 ## Warm-up
