@@ -1,5 +1,5 @@
 ---
-title: US Cyber Open Competitive CTF writeup
+title: US Cyber Game writeup
 published: 2025-06-12
 category: CTF
 licenseName: "Unlicensed"
