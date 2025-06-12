@@ -10,29 +10,24 @@ draft: false
 ### Cookie (Web)
 <img src="https://hackmd.io/_uploads/S1jwAVOmlx.png"  width="450" />
 
-首先進去網頁會有一個可愛的老鼠
+首先進去網頁會有一個可愛的老鼠<br>
 
 <img src="https://hackmd.io/_uploads/Hkuz1ruQee.png"  width="600" />
 
-其實一開始我以為這題只是改cookie而已
-
-~~結果好像沒那麼直觀~~
-
-發現一個叫cookie的cookie (?
-
+其實一開始我以為這題只是改cookie而已<br>
+~~結果好像沒那麼直觀~~<br>
+發現一個叫cookie的cookie (?<br>
 ```
 QWZ0ZXIgaW5zcGVjdGluZyB0aGUgY29udGVudHMsIGhlJ2xsIGhvcCBvbiB0aGUgUk9CT1QgdmFjY3V1bSBwaWNraW5nIHVwIHRoZSBjcnVtYnMgaGUgbWFkZS4KQ3J1bWIgMTogZFY5Q1FHc3paRjloVA==
 ```
-base64 解碼出來會是這樣
+base64 解碼出來會是這樣<br>
 ```
 After inspecting the contents, he'll hop on the ROBOT vaccuum picking up the crumbs he made.
 Crumb 1: dV9CQGszZF9hT
 ```
-得到第一段 flag: `dV9CQGszZF9hT`
-
-base64 解碼後: `u_B@k3d_aL`
-
-接著因為他提到 `ROBOT` ，所以看了一下 `/robots.txt`
+得到第一段 flag: `dV9CQGszZF9hT`<br>
+base64 解碼後: `u_B@k3d_aL`<br>
+接著因為他提到 `ROBOT` ，所以看了一下 `/robots.txt`<br>
 ```
 User-agent: *
 Disallow: /admin
@@ -40,17 +35,14 @@ Disallow: /admin
 # The robot vaccuum arrives at a locked door, which naturally he'll want to get inside
 # Crumb 2: jB0SDNSX2MwMG
 ```
-拿到第二段 flag: `jB0SDNSX2MwMG`
-
-但發現沒辦法單獨 base64 解碼，需要和第一段結合在一起，得到 `u_B@k3d_aN0tH3R_c00`
-
-接著進到 `/admin`
-
-出現一個登入頁面
+拿到第二段 flag: `jB0SDNSX2MwMG`<br>
+但發現沒辦法單獨 base64 解碼，需要和第一段結合在一起，得到 `u_B@k3d_aN0tH3R_c00`<br>
+接著進到 `/admin`<br>
+出現一個登入頁面<br>
 
 <img src="https://hackmd.io/_uploads/S1cplBO7ex.png"  width="600" />
 
-看了一下原始碼發現他直接把當第三段 flag 和登入後的路徑寫出來了
+看了一下原始碼發現他直接把當第三段 flag 和登入後的路徑寫出來了<br>
 
 ```javascript=
 <script>
@@ -67,9 +59,8 @@ Disallow: /admin
         }
 </script>
 ```
-目前三段 flag 拼湊出的答案 `u_B@k3d_aN0tH3R_c00k13_fOr_dA`
-
-接著進入 `/kitchen`
+目前三段 flag 拼湊出的答案 `u_B@k3d_aN0tH3R_c00k13_fOr_dA`<br>
+接著進入 `/kitchen`<br>
 
 <img src="https://hackmd.io/_uploads/H17SWSdXel.png"  width="600" />
 
@@ -122,41 +113,17 @@ function bakeCookie() {
 
 pourMilk();
 ```
-發現第四段 flag，把四段 flag 結合在一起後得到
-
+發現第四段 flag，把四段 flag 結合在一起後得到<br>
 `u_B@k3d_aN0tH3R_c00k13_fOr_dA_MoU5e!!!`
 
-**但這不是最後的答案！！！**
+**但這不是最後的答案！！！**<br>
 
-根據 `aNoteFallenFromTheFridge.txt`
-
-他說要把拼湊出的這串拿去替換 home page 的 cookie ，才能拿到最終的 flag
+根據 `aNoteFallenFromTheFridge.txt`<br>
+他說要把拼湊出的這串拿去替換 home page 的 cookie ，才能拿到最終的 flag<br>
 
 <img src="https://hackmd.io/_uploads/HJH4fH_7ll.png"  width="600" />
 
 <img src="https://hackmd.io/_uploads/H1K4MSdXle.png"  width="600" />
-
-### Prime Suspects
-
-<img src="https://hackmd.io/_uploads/rkA8GruXle.png"  width="450" />
-
-
-把 n 分解成 p 和 q 就可以了
-
-```python=
->>> from Crypto.Util.number import *
->>> n = 102064367305175623005003367803963735992210717721719563218760598878897771063019
->>> p = 305875545128432734240552595430305723491
->>> q = 333679396508538352589365351078683227609
->>> e = 65537
->>> c = 66538583650087752653364112099322882026083260207958188191147900019851853145222
->>> phi_n = (p-1)*(q-1)
->>> d = inverse(e, phi_n)
->>> pow(c, d, n)
-475771530942622400836342960890124188807255520125
->>> long_to_bytes(475771530942622400836342960890124188807255520125)
-b'SVUSCG{sm4ll_pr1m3s}'
-```
 
 ~~又無聊打開CTFtime找有沒有好玩的~~
 
