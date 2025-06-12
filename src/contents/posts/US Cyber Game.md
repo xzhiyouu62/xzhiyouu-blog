@@ -7,13 +7,6 @@ author: xzhiyouu
 sourceLink: "https://hackmd.io/@xzhiyouu/r1K3T4_mxl"
 draft: false
 ---
-
-~~又無聊打開CTFtime找有沒有好玩的~~
-
-~~看到這個的時候他們比賽時間只剩不到一小時了~~
-
-~~想說隨便打個幾題簡單的看看~~
-
 ### Cookie (Web)
 <img src="https://hackmd.io/_uploads/S1jwAVOmlx.png"  width="450" />
 
@@ -51,7 +44,7 @@ Disallow: /admin
 
 看了一下原始碼發現他直接把當第三段 flag 和登入後的路徑寫出來了<br>
 
-```javascript=
+```javascript
 <script>
         const ADMIN_USER = 'admin';
         const CRUMB_3 = 'sxM19mT3JfZEF';
@@ -104,7 +97,7 @@ Instructions:
 6) Enjoy your FLAG cookie~!
 ```
 * /refrigerator/Milk.js
-```javascript=
+```javascript
 // If he asks for a glass of milk, he's going to want a cookie to go with it.
 
 function pourMilk() {
@@ -131,3 +124,29 @@ pourMilk();
 <img src="https://hackmd.io/_uploads/HJH4fH_7ll.png"  width="600" />
 
 <img src="https://hackmd.io/_uploads/H1K4MSdXle.png"  width="600" />
+
+### Prime Suspects
+
+<img src="https://hackmd.io/_uploads/rkA8GruXle.png"  width="450" />
+
+
+把 n 分解成 p 和 q 就可以了<br>
+```python
+>>> from Crypto.Util.number import *
+>>> n = 102064367305175623005003367803963735992210717721719563218760598878897771063019
+>>> p = 305875545128432734240552595430305723491
+>>> q = 333679396508538352589365351078683227609
+>>> e = 65537
+>>> c = 66538583650087752653364112099322882026083260207958188191147900019851853145222
+>>> phi_n = (p-1)*(q-1)
+>>> d = inverse(e, phi_n)
+>>> pow(c, d, n)
+475771530942622400836342960890124188807255520125
+>>> long_to_bytes(475771530942622400836342960890124188807255520125)
+b'SVUSCG{sm4ll_pr1m3s}'
+```
+~~又無聊打開CTFtime找有沒有好玩的~~
+
+~~看到這個的時候他們比賽時間只剩不到一小時了~~
+
+~~想說隨便打個幾題簡單的看看~~
