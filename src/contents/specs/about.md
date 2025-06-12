@@ -1,5 +1,18 @@
-# Special thanks to:
+# About Me
 
-- [Hexo Shoka theme](https://github.com/amehime/hexo-theme-shoka) for providing design inspiration
+Hi! My name is Nelson, and I am a student with a strong interest in computer science and cybersecurity.
 
-- [Astro Fuwari template](https://github.com/saicaca/fuwari) for providing the main design concept and part of the implementation
+## Education Background
+
+- **Taipei Municipal Dalong Elementary School**
+- **Taipei Municipal Chongqing Junior High School** 
+- **Taipei Municipal Neihu High School - Computer Science Class 13th**  
+
+## Programming Languages
+
+- **C++**
+- **Python**
+
+## Interests
+
+I am currently focused on learning **Capture The Flag (CTF)** challenges, especially in the areas of **Web security** and **Cryptography**.
