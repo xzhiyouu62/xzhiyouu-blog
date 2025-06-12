@@ -44,7 +44,7 @@ Disallow: /admin
 
 看了一下原始碼發現他直接把當第三段 flag 和登入後的路徑寫出來了<br>
 
-```javascript
+```
 <script>
         const ADMIN_USER = 'admin';
         const CRUMB_3 = 'sxM19mT3JfZEF';
@@ -97,7 +97,7 @@ Instructions:
 6) Enjoy your FLAG cookie~!
 ```
 * /refrigerator/Milk.js
-```javascript
+```
 // If he asks for a glass of milk, he's going to want a cookie to go with it.
 
 function pourMilk() {
