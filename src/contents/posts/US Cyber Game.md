@@ -7,6 +7,13 @@ author: xzhiyouu
 sourceLink: "https://hackmd.io/@xzhiyouu/r1K3T4_mxl"
 draft: false
 ---
+
+~~又無聊打開CTFtime找有沒有好玩的~~
+
+~~看到這個的時候他們比賽時間只剩不到一小時了~~
+
+~~想說隨便打個幾題簡單的看看~~
+
 ### Cookie (Web)
 <img src="https://hackmd.io/_uploads/S1jwAVOmlx.png"  width="450" />
 
@@ -124,9 +131,3 @@ pourMilk();
 <img src="https://hackmd.io/_uploads/HJH4fH_7ll.png"  width="600" />
 
 <img src="https://hackmd.io/_uploads/H1K4MSdXle.png"  width="600" />
-
-~~又無聊打開CTFtime找有沒有好玩的~~
-
-~~看到這個的時候他們比賽時間只剩不到一小時了~~
-
-~~想說隨便打個幾題簡單的看看~~
