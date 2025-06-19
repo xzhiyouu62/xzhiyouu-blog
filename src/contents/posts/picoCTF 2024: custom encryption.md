@@ -1,5 +1,5 @@
 ---
-title: picoCTF 2024: custom encryption
+title: picoCTF 2024 custom encryption
 published: 2025-06-19
 category: CTF
 licenseName: "Unlicensed"
