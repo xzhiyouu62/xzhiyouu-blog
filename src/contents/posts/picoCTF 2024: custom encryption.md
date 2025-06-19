@@ -7,9 +7,6 @@ author: xzhiyouu
 sourceLink: "https://hackmd.io/@xzhiyouu/S1xXGObNxl"
 draft: false
 ---
->[name=xzhiyouu]
-
-
 ![image](https://hackmd.io/_uploads/SkkIfdZNgl.png)
 給了兩個檔案，分別是 `enc_flag` 和 `custom_encryption.py`
 
