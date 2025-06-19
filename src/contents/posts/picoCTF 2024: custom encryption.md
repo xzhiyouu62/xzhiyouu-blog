@@ -1,7 +1,6 @@
 ---
 title: picoCTF 2024: custom encryption
 published: 2025-06-19
-description: 
 category: CTF
 licenseName: "Unlicensed"
 author: xzhiyouu
