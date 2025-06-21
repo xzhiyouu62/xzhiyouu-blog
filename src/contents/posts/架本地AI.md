@@ -1,6 +1,6 @@
 ---
 title: 架設本地 AI
-published: 2025-06-10
+published: 2025-06-22
 description: 使用 Ollama + DeepSeek-R1:8B + Open WebUI
 category: project
 licenseName: "Unlicensed"
