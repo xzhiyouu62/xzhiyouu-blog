@@ -38,7 +38,7 @@ const YukinaConfig: Configuration = {
 
   username: "xzhiyouu",
   sign: "A high school student learning cybersecurity.",
-  avatarUrl: "https://scontent.ftpe8-3.fna.fbcdn.net/v/t39.30808-6/495081349_1956045761870905_221920331418930353_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=ly-1NafnawUQ7kNvwG795YS&_nc_oc=AdlIo9ZdAL-ZWDaXNJqb6hY1oHiXKpNabdZJD-SWbVPqe8S0nVyK_wjeeJyhB0Ajywc&_nc_zt=23&_nc_ht=scontent.ftpe8-3.fna&_nc_gid=tE5iXuUfitlKZV9rnbXK9w&oh=00_AfOgbwws_r7onjMbAzyn2zaa8qBByauSAQWmJ6u3uItHIw&oe=684CDCDB",
+  avatarUrl: "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/495081349_1956045761870905_221920331418930353_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=6spZhluIbGEQ7kNvwGH8GVb&_nc_oc=AdluKLOAtvkw-Kia89_nBTghBmEI7ICJ2_QKCm17oasw4idv5qreOvIxSKjFf821ycA&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=fJ__PWWE8Gp5AtwDQBDPfg&oh=00_AfPCs4LJflHftGD3xX_24QKbQLASWx0M3e9CxCfSUaBpFg&oe=686497DB",
   socialLinks: [
     {
       icon: "line-md:github-loop",
